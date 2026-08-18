@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+@include media-breakpoint-down(md){
+    h1{font-size: $font-size-base*2.5; /*40px*/ }
+    h2{font-size: $font-size-base*2.25; /*36px*/ }
+    h3{font-size: $font-size-base*1.75; /*28px*/ }
+    h4{font-size: $font-size-base*1.5; /*24px*/ }
+    h5{font-size: $font-size-base*1.25; /*20px*/ }
+    h6{font-size: $font-size-base*1.13; /*18px*/ }
+    .fs-lg{font-size: $font-size-base*1.13!important; /*18px*/ }
+    // .body_md_B,
+    .fs-md_B{font-size: $font-size-base*1!important; /*16px*/ }
+    // .body_md_M,
+    .fs-md{font-size: $font-size-base*1!important; /*16px*/ }
+    // .body_sm,
+    .fs-sm{font-size: $font-size-base*0.88!important; /*14px*/ }
+    .fs-Minimum{font-size: $font-size-base*0.75!important; /*12px*/ }
+    .btn_lg{font-size: $font-size-base*1.13!important; /*18px*/ }
+    .btn_md{font-size: $font-size-base*1!important; /*16px*/ }
+    .btn_sm{font-size: $font-size-base*0.88!important; /*14px*/ }
+}
+.fs-md_B,
+.fs-Minimum,
+.btn_lg,
+.btn_md,
+.btn_sm{
+    font-weight: $font-weight-bold;
+}
+.fs-lg,
+.fs-md,
+.fs-sm{
+    font-weight: $font-weight-medium;
+}
+body{
+    line-height: $line-height-lg;
+}
+h5,h6,
+.fs-Minimum,
+.btn_lg,
+.btn_md,
+.btn_sm{
+    line-height: $line-height-base;
+}

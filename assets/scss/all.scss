@@ -57,19 +57,19 @@
 
     // Helpers
     @import "bootstrap/scss/helpers";
-
+    
+    // 6. 專案自訂工具類
+    // 放手寫的 utility class，比如說 cursor
+    // 如果要修改 Bootstrap 的 $utilities map，則需要放在 Bootstrap 產生 utilities 之前
+    @import "./utilities";
+    
     // Utilities
     @import "bootstrap/scss/utilities/api";
     // scss-docs-end import-stack
-
-// 5. 專案文字樣式
-// 放設計稿定義的標題、內文、字級、字重與行高
-// @import "./base/typography";
-
-// 6. 專案自訂工具類
-// 放手寫的 utility class，比如說 cursor
-// 如果要修改 Bootstrap 的 $utilities map，則需要放在 Bootstrap 產生 utilities 之前
-// @import "./utilities";
+    
+    // 5. 專案文字樣式
+    // 放設計稿定義的標題、內文、字級、字重與行高
+    @import "./base/typography";
 
 // 7. 共用版面樣式
 // 放網站共用的大型版面區塊，例如 header、footer、navbar

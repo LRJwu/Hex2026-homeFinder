@@ -1,0 +1,34 @@
+$print-colors:map-merge-multiple(
+    $primarys,
+    $secondarys,
+    $grays,
+);
+$utilities: map-merge(
+  $utilities,
+  (
+    "background-color": map-merge(
+      map-get($utilities, "background-color"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "background-color"), "values"),
+          (
+            $print-colors
+          ),
+        ),
+      ),
+    ),
+    
+    "color": map-merge(
+      map-get($utilities, "color"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "color"), "values"),
+          (
+            $print-colors
+          ),
+        ),
+      ),
+    ),
+
+  )
+);
