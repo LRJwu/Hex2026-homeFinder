@@ -3,6 +3,14 @@ $print-colors:map-merge-multiple(
     $secondarys,
     $grays,
 );
+// 圓角變數：和間距一樣的尺寸
+$round-values:map-merge(
+      $spacers,(
+        null: var(--#{$prefix}border-radius),
+        circle: 50%,
+        pill: var(--#{$prefix}border-radius-pill)
+      )
+    );
 $utilities: map-merge(
   $utilities,
   (
@@ -37,5 +45,61 @@ $utilities: map-merge(
       (responsive: true),
     ),
 
-  )
+    //rounded圓角樣式
+    
+    "rounded": (
+      class: rounded,
+      responsive: true,
+      property: border-radius,
+      values: $round-values
+    ),
+    "rounded-top": (
+      class: rounded-top,
+      responsive: true,
+      property: border-top-left-radius border-top-right-radius,
+      values: $round-values
+    ),
+    "rounded-bottom": (
+      class: rounded-bottom,
+      responsive: true,
+      property: border-bottom-right-radius border-bottom-left-radius,
+      values: $round-values
+    ),
+    "rounded-ts": (
+      class: rounded-ts,
+      responsive: true,
+      property: border-top-left-radius,
+      values: $round-values
+    ),
+    "rounded-bs": (
+      class: rounded-bs,
+      responsive: true,
+      property: border-bottom-left-radius,
+      values: $round-values
+    ),
+    "rounded-te": (
+      class: rounded-te,
+      responsive: true,
+      property: border-top-right-radius,
+      values: $round-values
+    ),
+    "rounded-be": (
+      class: rounded-be,
+      responsive: true,
+      property: border-bottom-right-radius,
+      values: $round-values
+    ),
+    "rounded-start": (
+      class: rounded-start,
+      responsive: true,
+      property: border-bottom-left-radius border-top-left-radius,
+      values: $round-values
+    ),
+      "rounded-end": (
+        class: rounded-end,
+        responsive: true,
+        property: border-top-right-radius border-bottom-right-radius,
+        values: $round-values
+    ),
+)
 );
