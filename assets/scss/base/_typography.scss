@@ -12,8 +12,8 @@ p{
     h3,.h3{font-size: $font-size-base*1.75; /*28px*/ }
     h4,.h4{font-size: $font-size-base*1.5;  /*24px*/ }
     h5,.h5{font-size: $font-size-base*1.25; /*20px*/ }
-    h6,.h6{font-size: $font-size-base*1.13; /*18px*/ }
-    .fs-lg{font-size     : $font-size-base*1.13!important; /*18px*/ }
+    h6,.h6{font-size: $font-size-base*1.125; /*18px*/ }
+    .fs-lg{font-size     : $font-size-base*1.125!important; /*18px*/ }
         //.body_md_B,
     .fs-md_b{font-size   : $font-size-base*1!important;    /*16px*/ }
         //.body_md_M,
@@ -21,7 +21,7 @@ p{
         //.body_sm,
     .fs-sm{font-size     : $font-size-base*0.88!important; /*14px*/ }
     .fs-Minimum{font-size: $font-size-base*0.75!important; /*12px*/                        }
-    .btn-lg{font-size    : $font-size-base*1.13!important; /*18px*/ }
+    .btn-lg{font-size    : $font-size-base*1.125!important; /*18px*/ }
     .btn-md{font-size    : $font-size-base*1!important;    /*16px*/ }
     .btn-sm{font-size    : $font-size-base*0.88!important; /*14px*/ }
 }
@@ -52,3 +52,4 @@ h5,h6,
   font-variation-settings:
   'FILL' 1
 }
+.bi{ line-height: .8; }
