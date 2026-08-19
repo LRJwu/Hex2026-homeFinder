@@ -17,7 +17,10 @@ $utilities: map-merge(
         ),
       ),
     ),
-    
+    "background-breakpoint": map-merge(
+      map-get($utilities, "background-color"),
+      (responsive: true),
+    ),    
     "color": map-merge(
       map-get($utilities, "color"),
       (
@@ -28,6 +31,10 @@ $utilities: map-merge(
           ),
         ),
       ),
+    ),
+    "color-breakpoint": map-merge(
+      map-get($utilities, "color"),
+      (responsive: true),
     ),
 
   )

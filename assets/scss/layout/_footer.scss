@@ -1,0 +1,15 @@
+.bg-footer{
+    background: url(/assets/images/bg_footer_m.png)
+    no-repeat left top / auto 100%;
+    @include media-breakpoint-up(md){
+        background-image: url(/assets/images/bg_footer.png);
+    }
+}
+footer{
+    .btn:has(.bi){
+        font-size: 24px;
+    }
+    .btn:has(.bi-facebook){
+        font-size: 40px;
+    }
+}
