@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
-
+h1, h2, h3, h4, h5, h6,
+p{
+    margin-bottom: 0;
+    & *{
+        margin-bottom: 0;
+    }
+}
 @include media-breakpoint-down(md){
     h1,.h1{font-size: $font-size-base*2.5;  /*40px*/ }
     h2,.h2{font-size: $font-size-base*2.25; /*36px*/ }
