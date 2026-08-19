@@ -1,3 +1,10 @@
+@include media-breakpoint-down(md){
+  .navbar-brand{
+    img[src*="logo"]{
+      max-height: 28px;
+    }
+  }
+}
 [data-bs-target="#loginbar"]{
   & .navbar-toggler-icon{
       background-image: none;
