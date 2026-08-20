@@ -1,3 +1,31 @@
-.index-title {
-  font-size: 100px;
+.banner{
+  & .bg-img{
+    background: url(/assets/images/index-hero-Image.png)
+    no-repeat right bottom / cover;
+    overflow: hidden;
+  }
+  & .bg-banner-title{
+    position: relative;
+    display: inline-flex;
+    .banner-title{
+      margin       : 40px;
+      margin-top   : 220px;
+      margin-right : 340px;
+      margin-bottom: 168px;
+      position: relative;
+      z-index: 1;
+    }
+    &::before{
+      position: absolute;
+      content: "";
+      width: 100%;
+      height:100%;
+      width: calc(964 / (480 + 40 + 340)*100%);
+      height:calc(766 / (172 + 220 + 168)*100%);
+      left:  calc(-184/964*100%);
+      bottom:calc(-168/766*100%);
+      background: url(/assets/images/index/bg-banner-title.svg)
+      no-repeat right bottom / contain;
+    }
+  }
 }
