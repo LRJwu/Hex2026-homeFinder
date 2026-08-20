@@ -121,15 +121,15 @@
           </ul>
         </div>
       </header>
-      <section id="part-1" class="d-grid gap-16 py-md-17">
+      <section id="part-1" class="d-grid gap-9 gap-lg-16 py-md-17 overflow-hidden py-9">
         <div class="contenter d-grid gap-4 p-0">
           <h2 class="text-primary">為什麼選擇我們</h2>
           <h3 class="h6">專業服務，值得信賴</h3>
         </div>
         <div class="contenter p-0">
-          <ul class="list-unstyled row row-cols-1 row-cols-lg-4 g-10 g-lg-6">
+          <ul class="list-unstyled row row-cols-1 row-cols-lg-4 g-10 g-lg-6 text-center">
             <li class="col">
-              <div class="d-flex flex-column justify-content-center align-items-center gap-4 p-8 text-white bg-primary">
+              <div class="d-flex flex-column justify-content-center align-items-center gap-4 p-10 text-white bg-stone">
                 <h4 class="d-inline-flex text-secondary bg-white rounded-circle p-4"><span
                     class="material-symbols-outlined">kid_star</span></h4>
                 <h3 class="h4">精選物件</h3>
@@ -137,7 +137,7 @@
               </div>
             </li>
             <li class="col">
-              <div class="d-flex flex-column justify-content-center align-items-center gap-4 p-8 text-white bg-primary">
+              <div class="d-flex flex-column justify-content-center align-items-center gap-4 p-10 text-white bg-stone">
                 <h4 class="d-inline-flex text-secondary bg-white rounded-circle p-4"><span
                     class="material-symbols-outlined">group</span></h4>
                 <h3 class="h4">專業團隊</h3>
@@ -145,7 +145,7 @@
               </div>
             </li>
             <li class="col">
-              <div class="d-flex flex-column justify-content-center align-items-center gap-4 p-8 text-white bg-primary">
+              <div class="d-flex flex-column justify-content-center align-items-center gap-4 p-10 text-white bg-stone">
                 <h4 class="d-inline-flex text-secondary bg-white rounded-circle p-4"><span
                     class="material-symbols-outlined">trending_up</span></h4>
                 <h3 class="h4">市場洞察</h3>
@@ -153,7 +153,7 @@
               </div>
             </li>
             <li class="col">
-              <div class="d-flex flex-column justify-content-center align-items-center gap-4 p-8 text-white bg-primary">
+              <div class="d-flex flex-column justify-content-center align-items-center gap-4 p-10 text-white bg-stone">
                 <h4 class="d-inline-flex text-secondary bg-white rounded-circle p-4"><span
                     class="material-symbols-outlined">shield</span></h4>
                 <h3 class="h4">交易保障</h3>
@@ -167,11 +167,11 @@
         <div class="contenter-fluid p-0">
           <ul class="list-unstyled row g-4">
             <li class="col-12 col-lg-4">
-              <div class="card rounded-9 p-6 py-lg-10 px-lg-12 gap-6 text-white bg-primary w-100 h-100">
+              <div class="card rounded-9 p-6 py-lg-10 px-lg-12 gap-6 text-white bg-primary bg-img2 w-100 h-100">
                 <div class="d-flex flex-column align-items-start gap-3 gap-lg-9">
                   <h2> 精選房源 </h2>
                   <h3 class="h6">為您精心挑選的優質物件</h3>
-                  <button type="button" class="btn btn-white text-primary">
+                  <button type="button" class="btn btn-white text-primary ps-9 pe-7">
                     查看更多房源
                     <span class="material-symbols-outlined">arrow_forward</span>
                   </button>
@@ -184,7 +184,7 @@
             </li>
             <li class="col col-lg-8 position-relative">
               <div id="carousel-house" class="carousel slide">
-                <ul class="carousel-inner list-unstyled">
+                <ul class="list-unstyled carousel-inner">
                   <li class="carousel-item active">
                     <div class="card border-0">
                       <div class="rounded-6 position-relative">
@@ -215,10 +215,10 @@
                       </div>
                     </div>
                   </li>
-                  <li class="carousel-item active">
+                  <li class="carousel-item">
                     <div class="card border-0">
                       <div class="rounded-6 position-relative">
-                        <img class="rounded-6 w-100" src="../assets/images/search-house2.png" alt="示意圖：現代豪華大樓"
+                        <img class="rounded-6 w-100" src="../assets/images/search-house3.png" alt="示意圖：現代豪華大樓"
                           class="card-img-top">
                         <h6
                           class="badge fs-md rounded-pill bg-white text-primary-dark position-absolute bottom-0 end-0 m-3 py-1 px-5">
@@ -248,7 +248,7 @@
                   <li class="carousel-item">
                     <div class="card border-0">
                       <div class="rounded-6 position-relative">
-                        <img class="rounded-6 w-100" src="../assets/images/search-house3.png" alt="示意圖：溫馨透天"
+                        <img class="rounded-6 w-100" src="../assets/images/search-house2.png" alt="示意圖：溫馨透天"
                           class="card-img-top">
                         <h6
                           class="badge fs-md rounded-pill bg-white text-primary-dark position-absolute bottom-0 end-0 m-3 py-1 px-5">
@@ -280,24 +280,23 @@
               <div class="container">
                 <div class="row">
                   <div class="col-7">
-                    <div class="carousel-indicators position-relatistrat-0 top-50 translate-middle-y">
-                      <button class="w-100 m-0 active" data-bs-target="carousel-house" data-bs-slide-to="0"
+                    <div class="carousel-indicators position-relative m-0 top-50">
+                      <button class="w-100 m-0 active" data-bs-target="#carousel-house" data-bs-slide-to="0"
                         type="button"></button>
-                      <button class="w-100 m-0 " data-bs-target="carousel-house" data-bs-slide-to="1"
+                      <button class="w-100 m-0 " data-bs-target="#carousel-house" data-bs-slide-to="1"
                         type="button"></button>
-                      <button class="w-100 m-0 " data-bs-target="carousel-house" data-bs-slide-to="2"
+                      <button class="w-100 m-0 " data-bs-target="#carousel-house" data-bs-slide-to="2"
                         type="button"></button>
                     </div>
                   </div>
                   <ul class="col-5 list-unstyled row g-2">
                     <li class="col">
-                      <button class="btn btn-primary w-100 p-3" data-bs-target="carousel-house"
-                        data-bs-slide-to="prive">
+                      <button class="btn btn-primary w-100 p-3" data-bs-target="#carousel-house" data-bs-slide="prive"  type="button">
                         <span class="material-symbols-outlined">arrow_back</span>
                       </button>
                     </li>
                     <li class="col">
-                      <button class="btn btn-primary w-100 p-3" data-bs-target="carousel-house" data-bs-slide-to="next">
+                      <button class="btn btn-primary w-100 p-3" data-bs-target="#carousel-house" data-bs-slide="next"  type="button">
                         <span class="material-symbols-outlined">arrow_forward</span>
                       </button>
                     </li>

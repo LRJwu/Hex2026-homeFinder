@@ -26,3 +26,53 @@
     max-height: 188px;
   }
 }
+/*  區塊1*/
+.bg-stone{
+  position: relative;
+  &::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: var(--bs-primary);
+    background: url(/assets/images/display2.png) no-repeat center / contain ,transparent;
+    transform: scale(128%);
+    
+  }
+}
+.col:nth-child(n+1){
+  & .bg-stone::before{
+    background-image: url(/assets/images/display3.png);
+  }
+}
+.col:nth-child(2n+1){
+  & .bg-stone::before{
+    background-image: url(/assets/images/display4.png);
+    transform: scale(112%);
+  }
+}
+.col:nth-child(3n+1){
+  & .bg-stone::before{
+    background-image: url(/assets/images/display5.png);
+    transform: scale(116%);
+  }
+}
+/* END 區塊1*/
+
+/*     區塊 2*/
+.bg-img2{
+  background:
+    linear-gradient(#232E1A33,#232E1AB2),
+    url(/assets/images/index-img_house.png)no-repeat center / cover;
+}
+/* END 區塊 2*/
+
+/*     區塊 3*/
+
+/* END 區塊 3*/
+
+/*     區塊 4*/
+
+/* END 區塊 4*/
+
