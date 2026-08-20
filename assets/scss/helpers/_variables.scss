@@ -1307,15 +1307,15 @@ $dropdown-divider-margin-y:         $spacer * .5 !default;
 $dropdown-box-shadow:               var(--#{$prefix}box-shadow) !default;
 
 $dropdown-link-color:               var(--#{$prefix}body-color) !default;
-$dropdown-link-hover-color:         $dropdown-link-color !default;
-$dropdown-link-hover-bg:            var(--#{$prefix}tertiary-bg) !default;
+$dropdown-link-hover-color:         $white;//有修改，原本：$dropdown-link-color !default;
+$dropdown-link-hover-bg:            $secondary;//有修改，原本：var(--#{$prefix}tertiary-bg) !default;
 
-$dropdown-link-active-color:        $component-active-color !default;
-$dropdown-link-active-bg:           $component-active-bg !default;
+$dropdown-link-active-color:        $black;//有修改，原本：$component-active-color !default;
+$dropdown-link-active-bg:           $white;//有修改，原本：$component-active-bg !default;
 
 $dropdown-link-disabled-color:      var(--#{$prefix}tertiary-color) !default;
 
-$dropdown-item-padding-y:           $spacer * .25 !default;
+$dropdown-item-padding-y:           $spacer * .5;//有修改，原本：$spacer * .25 !default;
 $dropdown-item-padding-x:           $spacer !default;
 
 $dropdown-header-color:             $gray-600 !default;
