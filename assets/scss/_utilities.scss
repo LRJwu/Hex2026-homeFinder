@@ -5,15 +5,57 @@ $print-colors:map-merge-multiple(
 );
 // 圓角變數：和間距一樣的尺寸
 $round-values:map-merge(
-      $spacers,(
-        null: var(--#{$prefix}border-radius),
-        circle: 50%,
-        pill: var(--#{$prefix}border-radius-pill)
-      )
-    );
+  $spacers,(
+    null: var(--#{$prefix}border-radius),
+    circle: 50%,
+    pill: var(--#{$prefix}border-radius-pill)
+  )
+);
 $utilities: map-merge(
   $utilities,
   (
+    // 為width height 系列（如.w-100 .vh-100）啟用響應式斷點
+    "width": map-merge(
+            map-get($utilities,"width"),
+            ( responsive: true )
+        ),
+        
+        "max-width": map-merge(
+            map-get($utilities,"max-width"),
+            ( responsive: true )
+        ),
+        
+        "viewport-width": map-merge(
+            map-get($utilities,"viewport-width"),
+            ( responsive: true )
+        ),
+        
+        "min-viewport-width": map-merge(
+            map-get($utilities,"min-viewport-width"),
+            ( responsive: true )
+        ),
+        
+        "height": map-merge(
+            map-get($utilities,"height"),
+            ( responsive: true )
+        ),
+        
+        "max-height": map-merge(
+            map-get($utilities,"max-height"),
+            ( responsive: true )
+        ),
+        
+        "viewport-height": map-merge(
+            map-get($utilities,"viewport-height"),
+            ( responsive: true )
+        ),
+        
+        "min-viewport-height": map-merge(
+            map-get($utilities,"min-viewport-height"),
+            ( responsive: true )
+        ),
+
+
     "background-color": map-merge(
       map-get($utilities, "background-color"),
       (
