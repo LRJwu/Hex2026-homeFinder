@@ -73,6 +73,21 @@
 /* END 區塊 3*/
 
 /*     區塊 4*/
-
+@include media-breakpoint-up(lg){
+.bg-img4{
+  position: relative;
+  &::before{
+    position: absolute;
+    content:"";
+    width: 50%;
+    height: calc(100% + 110px);
+    top: 40px;
+    right: 0;
+    background: url(/assets/images/index/index-part4.png)no-repeat;
+    background-size: auto 100%;
+  }
+  
+}
+}
 /* END 區塊 4*/
 
