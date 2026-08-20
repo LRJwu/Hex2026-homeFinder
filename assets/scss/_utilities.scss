@@ -14,6 +14,11 @@ $round-values:map-merge(
 $utilities: map-merge(
   $utilities,
   (
+    //為position 啟用響應式斷點
+    "position": map-merge(
+        map-get($utilities,"position"),
+        ( responsive: true )
+    ),
     // 為width height 系列（如.w-100 .vh-100）啟用響應式斷點
     "width": map-merge(
             map-get($utilities,"width"),
