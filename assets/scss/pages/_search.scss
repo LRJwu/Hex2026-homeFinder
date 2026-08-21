@@ -1,0 +1,25 @@
+.bg-img-display1 {
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        --bgh:138px;
+        position: absolute;
+        content: "";
+        z-index: -1;
+        width: 50%;
+        height: var(--bgh);
+        left: 50%;
+        top: 0;
+        transform: translateX(-100%);
+        background: url(/assets/images/display1.png)no-repeat top left / auto 100%;
+        background-position-x: -52px;
+        
+        @include media-breakpoint-up(sm) {
+        --bgh:220px;
+            top: 70px;
+            transform: translateX(-113%);
+            background-position-x: left;
+        }
+    }
+}

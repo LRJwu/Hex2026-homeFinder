@@ -487,7 +487,7 @@ $position-values: (
 
 $body-text-align:           null !default;
 $body-color:                $gray-700;//有修改，原本：900 !default;
-$body-bg:                   $white !default;
+$body-bg:                   $gray-100;//有修改，原本：$white !default;
 
 $body-secondary-color:      rgba($body-color, .75) !default;
 $body-secondary-bg:         $gray-200 !default;
@@ -1345,8 +1345,8 @@ $dropdown-dark-header-color:        $gray-500 !default;
 // Pagination
 
 // scss-docs-start pagination-variables
-$pagination-padding-y:              .375rem !default;
-$pagination-padding-x:              .75rem !default;
+$pagination-padding-y:              .5rem;//有修改，原本：.375rem !default;
+$pagination-padding-x:              .625rem;//有修改，原本：.75rem !default;
 $pagination-padding-y-sm:           .25rem !default;
 $pagination-padding-x-sm:           .5rem !default;
 $pagination-padding-y-lg:           .75rem !default;
@@ -1354,25 +1354,25 @@ $pagination-padding-x-lg:           1.5rem !default;
 
 $pagination-font-size:              $font-size-base !default;
 
-$pagination-color:                  var(--#{$prefix}link-color) !default;
-$pagination-bg:                     var(--#{$prefix}body-bg) !default;
+$pagination-color:                  var(--#{$prefix}body-color);//有修改，原本：var(--#{$prefix}link-color) !default;
+$pagination-bg:                     transparent;//有修改，原本：var(--#{$prefix}body-bg) !default;
 $pagination-border-radius:          var(--#{$prefix}border-radius) !default;
-$pagination-border-width:           var(--#{$prefix}border-width) !default;
+$pagination-border-width:           0;//有修改，原本：var(--#{$prefix}border-width) !default;
 $pagination-margin-start:           calc(-1 * #{$pagination-border-width}) !default; // stylelint-disable-line function-disallowed-list
-$pagination-border-color:           var(--#{$prefix}border-color) !default;
+$pagination-border-color:           transparent;//有修改，原本：var(--#{$prefix}body-color);//有修改，原本：var(--#{$prefix}border-color) !default;
 
-$pagination-focus-color:            var(--#{$prefix}link-hover-color) !default;
+$pagination-focus-color:            var(--#{$prefix}secondary-color);//有修改，原本：var(--#{$prefix}link-hover-color) !default;
 $pagination-focus-bg:               var(--#{$prefix}secondary-bg) !default;
 $pagination-focus-box-shadow:       $focus-ring-box-shadow !default;
 $pagination-focus-outline:          0 !default;
 
-$pagination-hover-color:            var(--#{$prefix}link-hover-color) !default;
-$pagination-hover-bg:               var(--#{$prefix}tertiary-bg) !default;
-$pagination-hover-border-color:     var(--#{$prefix}border-color) !default; // Todo in v6: remove this?
+$pagination-hover-color:            $secondary-default;//有修改，原本：var(--#{$prefix}link-hover-color) !default;
+$pagination-hover-bg:               transparent;//有修改，原本：var(--#{$prefix}tertiary-bg) !default;
+$pagination-hover-border-color:     transparent;//有修改，原本：var(--#{$prefix}border-color) !default; // Todo in v6: remove this?
 
-$pagination-active-color:           $component-active-color !default;
-$pagination-active-bg:              $component-active-bg !default;
-$pagination-active-border-color:    $component-active-bg !default;
+$pagination-active-color:           $secondary-default;//有修改，原本：$component-active-color !default;
+$pagination-active-bg:              transparent;//有修改，原本：$component-active-bg !default;
+$pagination-active-border-color:    transparent;//有修改，原本：$component-active-bg !default;
 
 $pagination-disabled-color:         var(--#{$prefix}secondary-color) !default;
 $pagination-disabled-bg:            var(--#{$prefix}secondary-bg) !default;
