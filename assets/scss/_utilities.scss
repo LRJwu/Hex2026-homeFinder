@@ -84,6 +84,7 @@ $utilities: map-merge(
     "background-color": map-merge(
       map-get($utilities, "background-color"),
       (
+        responsive: true,
         values: map-merge(
           map-get(map-get($utilities, "background-color"), "values"),
           (
@@ -91,14 +92,15 @@ $utilities: map-merge(
           ),
         ),
       ),
-    ),
-    "background-breakpoint": map-merge(
+    ), "background-breakpoint": map-merge(
       map-get($utilities, "background-color"),
       (responsive: true),
     ),    
+   
     "color": map-merge(
       map-get($utilities, "color"),
       (
+        responsive: true,
         values: map-merge(
           map-get(map-get($utilities, "color"), "values"),
           (
