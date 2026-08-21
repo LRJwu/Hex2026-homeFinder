@@ -92,7 +92,8 @@ $utilities: map-merge(
           ),
         ),
       ),
-    ), "background-breakpoint": map-merge(
+    ), 
+    "background-breakpoint": map-merge(
       map-get($utilities, "background-color"),
       (responsive: true),
     ),    
@@ -113,7 +114,15 @@ $utilities: map-merge(
       map-get($utilities, "color"),
       (responsive: true),
     ),
-
+    //border響應式斷點
+    "border-breakpoint": map-merge(
+      map-get($utilities, "border"),
+      (responsive: true),
+    ),
+    "border-color-breakpoint": map-merge(
+      map-get($utilities, "border-color"),
+      (responsive: true),
+    ),
     //rounded圓角樣式
     
     "rounded": (
