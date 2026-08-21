@@ -19,6 +19,26 @@ $utilities: map-merge(
         map-get($utilities,"position"),
         ( responsive: true )
     ),
+    "top": map-merge(
+      map-get($utilities,"top"),
+      ( responsive: true)
+    ),
+    "bottom": map-merge(
+      map-get($utilities,"bottom"),
+      ( responsive: true)
+    ),
+    "start": map-merge(
+      map-get($utilities,"start"),
+      ( responsive: true)
+    ),
+    "end": map-merge(
+      map-get($utilities,"end"),
+      ( responsive: true)
+    ),
+    "translate-middle": map-merge(
+      map-get($utilities,"translate-middle"),
+      ( responsive: true)
+    ),
     // 為width height 系列（如.w-100 .vh-100）啟用響應式斷點
     "width": map-merge(
             map-get($utilities,"width"),
