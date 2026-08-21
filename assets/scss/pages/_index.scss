@@ -40,9 +40,9 @@ $deco-size:2.5rem;
     content: "";
     width:  var(--deco-size);
     height: var(--deco-size);
-    background: black;
+    background: var(--bs-gray-100);
     background-repeat: no-repeat;
-    background: radial-gradient(var(--deco-circle_at),transparent 70%,white 70%);
+    background: radial-gradient(var(--deco-circle_at),transparent 70%,var(--bs-gray-100) 70%);
   }
 }
 @mixin make-deco-round-classes($prefix: "deco-round") {
@@ -84,6 +84,17 @@ $deco-size:2.5rem;
 /* END 搜尋列表*/
 
 /*  區塊1*/
+.bg-index1{
+  background:
+  url(/assets/images/index/bg-index1.svg) no-repeat center right/ auto 50%,
+  url(/assets/images/bg_stone_top.png) no-repeat bottom center / contain,
+  ;
+  @include media-breakpoint-up(md){
+    & .bg-img-display1::before{
+      top: -50px;
+    }
+  }
+}
 .bg-stone{
   position: relative;
   z-index: 1;
@@ -121,16 +132,27 @@ $deco-size:2.5rem;
 /*     區塊 2*/
 .bg-img2{
   background:
-    linear-gradient(#232E1A33,#232E1AB2),
-    url(/assets/images/index-img_house.png)no-repeat center / cover;
+  linear-gradient(#232E1A33,#232E1AB2),
+  url(/assets/images/index-img_house.png)no-repeat center / cover;
 }
 /* END 區塊 2*/
 
 /*     區塊 3*/
+.bg-index3{
+background:
+  url(/assets/images/bg_stone_bottom.png) no-repeat top center / contain,
+  ;
+  // background-color: black;
+}
 
 /* END 區塊 3*/
 
 /*     區塊 4*/
+.bg-index4{
+background:
+  url(/assets/images/stone.png) no-repeat center left 53px / contain;
+}
+
 @include media-breakpoint-up(lg){
 .bg-img4{
   position: relative;
