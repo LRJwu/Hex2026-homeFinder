@@ -41,7 +41,7 @@ html {
 }
 @keyframes navbar-bg-animation {
   0%   { background: transparent;}
-  100% { background: #fff; }
+  100% { background: $gray-100; }
 }
 
 @keyframes navbar-margin-animation {
