@@ -28,12 +28,23 @@ html {
 }
 // 2. 將動畫與滾動時間軸綁定 (animation-timeline)
 .navbar-bg {
-  animation         : navbar-bg-animation forwards;  // 你的 @keyframes 動畫
-  animation-timeline: --my-scroll-progress;          // 將動畫綁定到先前定義的滾動時間軸
+  animation           : navbar-bg-animation forwards;  // 你的 @keyframes 動畫
+  animation-timeline  : --my-scroll-progress;          // 將動畫綁定到先前定義的滾動時間軸
   // 3. 定義動畫的觸發範圍
-  animation-range   : 0px 300px;                     // 動畫從 0px 滾動到 300px 後完成
+  animation-range     : 0px 300px;   // 動畫從 0px 滾動到 300px 後完成
+  @include media-breakpoint-up(md){
+    animation         : navbar-bg-animation forwards, navbar-margin-animation 0.1s forwards;  // 你的 @keyframes 動畫
+    animation-timeline: --my-scroll-progress,         --my-scroll-progress;                   // 將動畫綁定到先前定義的滾動時間軸
+    animation-range   : 0px 500px,                    0 100px;                                // 動畫從 0px 滾動到 300px 後完成
+    
+  }                  
 }
 @keyframes navbar-bg-animation {
-  0%   { background: transparent; }
+  0%   { background: transparent;}
   100% { background: #fff; }
+}
+
+@keyframes navbar-margin-animation {
+  0%   { background : transparent;margin-top: 28px; }
+  100% { margin-top : 0!important; }
 }
