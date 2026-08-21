@@ -114,6 +114,20 @@ $utilities: map-merge(
       map-get($utilities, "color"),
       (responsive: true),
     ),
+    "bg-opacity":(
+      css-var: true,                   // 👈 告訴 Bootstrap 這是寫入 CSS 變數 (--bs-bg-opacity)
+      css-variable-name: bg-opacity,  // 變數名稱
+      class: "bg-opacity",            // 👈 class 名稱必須加上雙引號
+      responsive: true,               // 開啟響應式斷點
+      values:(
+          0:   0,
+          25: .25,
+          50: .5,
+          75: .75,
+          80: .8,
+          100: 1,
+      )
+    ),
     //border響應式斷點
     "border-breakpoint": map-merge(
       map-get($utilities, "border"),
