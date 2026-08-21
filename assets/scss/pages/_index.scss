@@ -22,13 +22,71 @@
       max-width: 480px;
     }
   }
-  .dropdown-menu{
-    max-height: 188px;
+     /*     搜尋列表*/
+    .dropdown-menu {
+      max-height: 188px;
+    }
+  
+    /* END 搜尋列表*/
+}
+
+/*     搜尋列表*/
+$deco-size:2.5rem;
+@mixin deco-round-style{
+  --deco-size:#{$deco-size};
+  position: relative;
+  &::before,&::after{
+    position: absolute;
+    content: "";
+    width:  var(--deco-size);
+    height: var(--deco-size);
+    background: black;
+    background-repeat: no-repeat;
+    background: radial-gradient(var(--deco-circle_at),transparent 70%,white 70%);
   }
 }
+@mixin make-deco-round-classes($prefix: "deco-round") {
+  .#{$prefix}-bottom {
+    --deco-circle_at: circle at top right;
+    @include deco-round-style;
+    &::before {
+      bottom: 100%;
+      left: 0;
+    }
+    &::after {
+      bottom: 0;
+      left: 100%;
+    }
+  }
+
+  .#{$prefix}-top {
+    --deco-circle_at: circle at bottom right;
+    @include deco-round-style;
+    &::before {
+      top: 100%;
+      left: 0;
+    }
+    &::after {
+      top: 0;
+      left: 100%;
+    }
+  }
+}
+@include make-deco-round-classes("deco-round");
+//建立斷點
+@each $breakpoint, $value in $grid-breakpoints {
+  @if $value != 0 {
+    @include media-breakpoint-up($breakpoint) {
+      @include make-deco-round-classes("deco-round-#{$breakpoint}");
+    }
+  }
+}
+/* END 搜尋列表*/
+
 /*  區塊1*/
 .bg-stone{
   position: relative;
+  z-index: 1;
   &::before{
     position: absolute;
     content: "";

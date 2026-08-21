@@ -447,25 +447,25 @@ $spacers: (
   // 4: $spacer * 1.5,
   // 5: $spacer * 3,
   //有修改，以下新增：
-  1: $spacer * 0.25, //spacing-4px
-  2: $spacer * 0.5, //spacing-8px
-  3: $spacer * 0.75, //spacing-12px
-  4: $spacer, //spacing-16px
-  5: $spacer * 1.25, //spacing-20px
-  6: $spacer * 1.5, //spacing-24px
-  7: $spacer * 1.75, //spacing-28px
-  8: $spacer * 2, //spacing-32px
-  9: $spacer * 2.5, //spacing-40px
-  10: $spacer * 3, //spacing-48px
-  11: $spacer * 3.25, //spacing-52px
-  12: $spacer * 3.75, //spacing-60px
-  13: $spacer * 4, //spacing-64px
-  14: $spacer * 5, //spacing-80px
-  15: $spacer * 6.25, //spacing-100px
-  16: $spacer * 7.5, //spacing-120px
-  17: $spacer * 10, //spacing-160px
-  18: $spacer * 12.5, //spacing-200px
-  19: $spacer * 13.75, //spacing-220px
+  1 : $spacer * 0.25,    //spacing-4px
+  2 : $spacer * 0.5,     //spacing-8px
+  3 : $spacer * 0.75,    //spacing-12px
+  4 : $spacer,           //spacing-16px
+  5 : $spacer * 1.25,    //spacing-20px
+  6 : $spacer * 1.5,     //spacing-24px
+  7 : $spacer * 1.75,    //spacing-28px
+  8 : $spacer * 2,       //spacing-32px
+  9 : $spacer * 2.5,     //spacing-40px
+  10: $spacer * 3,       //spacing-48px
+  11: $spacer * 3.25,    //spacing-52px
+  12: $spacer * 3.75,    //spacing-60px
+  13: $spacer * 4,       //spacing-64px
+  14: $spacer * 5,       //spacing-80px
+  15: $spacer * 6.25,    //spacing-100px
+  16: $spacer * 7.5,     //spacing-120px
+  17: $spacer * 10,      //spacing-160px
+  18: $spacer * 12.5,    //spacing-200px
+  19: $spacer * 13.75,   //spacing-220px
 ) !default;
 // scss-docs-end spacer-variables-maps
 

@@ -13,11 +13,15 @@
 <body class="">
   <%- include('./layout/header'); -%>
 
-    <main class="p-4 p-md-9">
+    <main class="bg-100 p-4 p-md-9">
       <header class="banner position-relative pb-lg-0">
         <div class="bg-img bg-secondary rounded-9 vh-md-100">
+          <!-- 右上角的白邊圓框 -->
+          <div
+            class="d-none d-md-block bg-white rounded-be-9 px-17 pt-8 pb-15 position-absolute left-0 top-0 deco-round-top">
+          </div>
+          <!--  ＥＮＤ 右上角的白邊圓框 -->
           <div class="bg-banner-title pt-9 pb-19 pt-lg-19 ps-lg-9">
-          <!-- <div class="bg-banner-title"> -->
             <div class="banner-title d-inline-grid gap-6 me-4">
               <h1 class="text-primary">找到您的夢想家園</h1>
               <h2 class="h5"> 上千筆精選房源、專業預約看房服務、即時房貸試算，讓您輕鬆找到理想住宅 </h2>
@@ -25,7 +29,8 @@
           </div>
         </div>
         <!-- 選單列們 -->
-        <div class="p-4 m-lg-0 position-md-absolute strat-0 bottom-0 bg-white rounded-te-9 p-6 pe-9 me-lg-9">
+        <div
+          class="deco-round-md-bottom p-4 m-lg-0 position-md-absolute strat-0 bottom-0 bg-100 rounded-te-9 p-6 pe-9 me-lg-9">
           <ul class="list-unstyled row row-cols-1 row-cols-lg-5 g-4 g-lg-6 align-items-end">
             <li class="col">
               <div class="row row-cols-2 row-cols-lg-1 g-2">
@@ -370,8 +375,8 @@
                   <div class="row">
                     <div class="col-7">
                       <div class="carousel-indicators position-relative m-0 top-50">
-                        <button class="w-100 m-0 active" data-bs-target="#carousel-house" data-bs-slide-to="0" aria-current="true"
-                          type="button"></button>
+                        <button class="w-100 m-0 active" data-bs-target="#carousel-house" data-bs-slide-to="0"
+                          aria-current="true" type="button"></button>
                         <button class="w-100 m-0 " data-bs-target="#carousel-house" data-bs-slide-to="1"
                           type="button"></button>
                         <button class="w-100 m-0 " data-bs-target="#carousel-house" data-bs-slide-to="2"
@@ -380,12 +385,14 @@
                     </div>
                     <ul class="col-5 list-unstyled row g-2">
                       <li class="col">
-                        <button class="btn btn-primary w-100 p-3" data-bs-target="#carousel-house" data-bs-slide="prive"  type="button">
+                        <button class="btn btn-primary w-100 p-3" data-bs-target="#carousel-house" data-bs-slide="prive"
+                          type="button">
                           <span class="material-symbols-outlined">arrow_back</span>
                         </button>
                       </li>
                       <li class="col">
-                        <button class="btn btn-primary w-100 p-3" data-bs-target="#carousel-house" data-bs-slide="next"  type="button">
+                        <button class="btn btn-primary w-100 p-3" data-bs-target="#carousel-house" data-bs-slide="next"
+                          type="button">
                           <span class="material-symbols-outlined">arrow_forward</span>
                         </button>
                       </li>
@@ -451,9 +458,9 @@
         </div>
       </section>
       <section id="part-4" class="py-10 py-md-17 bg-img4 me-md-n9">
-        <div class="container p-0">
+        <div class="container">
           <div class="row row-cols-1 row-cols-lg-2 justify-content-between align-itmes-center g-9">
-            <article class="order-2 order-lg-1">
+            <article class="col order-2 order-lg-1">
               <div class="d-flex flex-column align-items-lg-start gap-10 p-6">
                 <div class="d-grid gap-3 gap-lg-6">
                   <h2 class="text-primary">準備好找到您的<br>理想住宅了嗎？</h2>
@@ -471,7 +478,7 @@
                 </div>
               </div>
             </article>
-            <div class="order-1 order-lg-2 col">
+            <div class="col order-1 order-lg-2">
               <img class="w-100 d-lg-none" src="../assets/images/index/index-part4.png" alt="裝飾圖">
             </div>
           </div>
