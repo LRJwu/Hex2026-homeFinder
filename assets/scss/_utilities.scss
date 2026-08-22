@@ -11,6 +11,30 @@ $round-values:map-merge(
     pill: var(--#{$prefix}border-radius-pill)
   )
 );
+$wh-value: (
+  25: 25%,
+  50: 50%,
+  75: 75%,
+  80: 80%,
+  100: 100%,
+  auto: auto
+);
+$vw-value: (
+  25: 25vw,
+  50: 50vw,
+  75: 75vw,
+  80: 80vw,
+  100: 100vw,
+  auto: auto
+);
+$vh-value: (
+  25: 25vh,
+  50: 50vh,
+  75: 75vh,
+  80: 80vh,
+  100: 100vh,
+  auto: auto
+);
 $utilities: map-merge(
   $utilities,
   (
@@ -39,46 +63,73 @@ $utilities: map-merge(
       map-get($utilities,"translate-middle"),
       ( responsive: true)
     ),
-    // 為width height 系列（如.w-100 .vh-100）啟用響應式斷點
-    "width": map-merge(
-            map-get($utilities,"width"),
-            ( responsive: true )
-        ),
-        
-        "max-width": map-merge(
-            map-get($utilities,"max-width"),
-            ( responsive: true )
-        ),
-        
-        "viewport-width": map-merge(
-            map-get($utilities,"viewport-width"),
-            ( responsive: true )
-        ),
-        
-        "min-viewport-width": map-merge(
-            map-get($utilities,"min-viewport-width"),
-            ( responsive: true )
-        ),
-        
-        "height": map-merge(
-            map-get($utilities,"height"),
-            ( responsive: true )
-        ),
-        
-        "max-height": map-merge(
-            map-get($utilities,"max-height"),
-            ( responsive: true )
-        ),
-        
-        "viewport-height": map-merge(
-            map-get($utilities,"viewport-height"),
-            ( responsive: true )
-        ),
-        
-        "min-viewport-height": map-merge(
-            map-get($utilities,"min-viewport-height"),
-            ( responsive: true )
-        ),
+    "object-position": (
+      property: object-position,
+      class: object-position,
+      responsive: true, // 開啟斷點支援
+      values: (
+        center: center,
+        top: top,
+        bottom: bottom,
+        start: left,
+        end: right,
+        "top-start": top left,
+        "top-end": top right,
+        "bottom-start": bottom left,
+        "bottom-end": bottom right,
+      )
+    ),
+
+    // 為width height 系列（如.w-100 .vh-100）新增尺寸＆啟用響應式斷點
+    "width": (
+      responsive: true, // 開啟斷點支援
+      property: width,
+      class: w,
+      values: $wh-value
+    ),
+    "max-width": (
+      responsive: true, // 開啟斷點支援
+      property: max-width,
+      class: mw,
+      values: $wh-value
+    ),
+    "viewport-width": (
+      responsive: true, // 開啟斷點支援
+      property: width,
+      class: vw,
+      values: $vw-value
+    ),
+    "min-viewport-width": (
+      responsive: true, // 開啟斷點支援
+      property: min-width,
+      class: min-vw,
+      values: $vw-value
+    ),
+    "height": (
+      responsive: true, // 開啟斷點支援
+      property: height,
+      class: h,
+      values: $wh-value
+    ),
+    "max-height": (
+      responsive: true, // 開啟斷點支援
+      property: max-height,
+      class: mh,
+      values: $wh-value
+    ),
+    "viewport-height": (
+      responsive: true, // 開啟斷點支援
+      property: height,
+      class: vh,
+      values: $vh-value
+    ),
+    "min-viewport-height": (
+      responsive: true, // 開啟斷點支援
+      property: min-height,
+      class: min-vh,
+      values: $vh-value
+    ),
+    
 
 
     "background-color": map-merge(
