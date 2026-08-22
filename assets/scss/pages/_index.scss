@@ -112,27 +112,29 @@ $deco-size:2.5rem;
     content: "";
     width: 100%;
     height: 100%;
+    max-width: calc(70vw);
     z-index: -1;
     background: var(--bs-primary);
     background: url(/assets/images/display2.png) no-repeat center / contain ,transparent;
     transform: scale(128%);
-    
   }
 }
-.col:nth-child(n+1){
+.col:nth-child(2n){
   & .bg-stone::before{
     background-image: url(/assets/images/display3.png);
   }
 }
-.col:nth-child(2n+1){
+.col:nth-child(3n){
   & .bg-stone::before{
     background-image: url(/assets/images/display4.png);
+    width: 112%;
     transform: scale(112%);
   }
 }
-.col:nth-child(3n+1){
+.col:nth-child(4n){
   & .bg-stone::before{
     background-image: url(/assets/images/display5.png);
+    width: 116%;
     transform: scale(116%);
   }
 }
