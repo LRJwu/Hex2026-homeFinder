@@ -9,25 +9,34 @@
       max-height: 564px;
      }
   }
+  & .bg-banner{
+    background: url(/assets/images/index/bg-banner-title.svg)
+    no-repeat center bottom/257%;
+    @include media-breakpoint-up(md){
+      width: 100%;
+      background-size      : 964px; 
+      background-position-x: -144px;
+    }
+  }
+  //舊的寫法：
   & .bg-banner-title{
-     background: url(/assets/images/index/bg-banner-title.svg)
-     no-repeat -144px bottom / 964px;
-     @include media-breakpoint-down(md){
+    background: url(/assets/images/index/bg-banner-title.svg)
+    no-repeat -144px bottom / 964px;
+    @include media-breakpoint-down(md){
       background-position: -253px -500px;
-      // background-size: contain;
-     }
-    //  background-size: calc(964/1840*100%);
-    //  background-position: calc(-144/964*100%) bottom;
+    }
     & .banner-title{
       max-width: 480px;
     }
   }
-     /*     搜尋列表*/
+  //END 舊的寫法↑
+
+  /*     搜尋列表*/
     .dropdown-menu {
       max-height: 188px;
     }
   
-    /* END 搜尋列表*/
+  /* END 搜尋列表*/
 }
 
 /*     搜尋列表*/
