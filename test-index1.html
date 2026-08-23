@@ -5,12 +5,14 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>好房查詢｜ISHIMA｜找到您的夢想家園</title>
+  <title>ISHIMA｜找到您的夢想家園</title>
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
   <script type="module" crossorigin src="/Hex2026-homeFinder/assets/main-VJbYAPVQ.js"></script>
   <link rel="stylesheet" crossorigin href="/Hex2026-homeFinder/assets/main-BiXILHqg.css">
 </head>
+
 
 <body class="">
   <nav class="navbar sticky-top position-lg-fixed w-100 navbar-bg py-lg-4">
@@ -51,166 +53,27 @@
             <button class="btn btn-primary btn-md py-4" type="button">登入 / 註冊</button>
         </div>
     </div>
-</nav>
-  <main class="">
-    <header class="banner position-relative z-1 pb-lg-0 p-4 p-md-9">
-      <div class="rounded-6 rounded-lg-9 vh-md-100 position-relative overflow-hidden">
-        <!-- 右上角的白邊圓框 -->
-        <div
-          class="d-none d-md-block bg-100 rounded-be-9 px-17 pt-8 pb-15 position-absolute left-0 top-0 deco-round-top">
-        </div>
-        <!--  ＥＮＤ 右上角的白邊圓框 -->
-        <img class="w-100 h-100 object-fit-md-cover rounded-6" src="/Hex2026-homeFinder/assets/search-hero-image-D-yRiZgV.png" alt="">
-        <div class="position-md-absolute top-0 start-0 pt-4 pt-lg-19 ps-lg-9">
-          <div class="banner-title bg-100 bg-opacity-80 d-inline-grid gap-6 rounded-md-9 p-4 py-md-9 px-md-12 position-relative z-1">
-            <h1 class="text-primary">好房查詢</h1>
-            <h2 class="h5"> 上千筆精選房源、專業預約看房服務、即<br class="d-none d-md-block">時房貸試算，讓您輕鬆找到理想住宅 </h2>
-          </div>
-        </div>
-      </div>
-      <!-- 選單列們 -->
-      <div
-    class="deco-round-lg-bottom p-4 m-lg-0 position-lg-absolute strat-0 bottom-0 bg-100 rounded-te-9 py-6 pe-lg-9 me-lg-9 mx-md-80">
-    <ul class="list-unstyled row row-cols-1 row-cols-lg-5 g-4 g-lg-6 align-items-end">
-        <li class="col">
-            <div class="row row-cols-2 row-cols-lg-1 g-2">
-                <h3 class="col-3 fs-md text-primary">地區</h3>
-                <div class="col-9">
-                    <div class="dropdown w-100">
-                        <button
-                            class="w-100 btn btn-outline-light justify-content-between dropdown-toggle dropdown-toggle-split"
-                            data-bs-toggle="dropdown" type="button">
-                            <span class="material-symbols-outlined text-primary">location_on</span>
-                            <sapn class="me-auto">請選擇地區</sapn>
-                        </button>
-                        <ul class="dropdown-menu overflow-y-auto w-100">
-                            <li><a href="#" class="dropdown-item ps-9">基隆縣</a></li>
-                            <li><a href="#" class="dropdown-item ps-9">台北市</a></li>
-                            <li><a href="#" class="dropdown-item ps-9">新北市</a></li>
-                            <li><a href="#" class="dropdown-item ps-9">桃園市</a></li>
-                            <li><a href="#" class="dropdown-item ps-9">新竹市</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </li>
-        <li class="col">
-            <div class="row row-cols-2 row-cols-lg-1 g-2">
-                <h3 class="col-3 fs-md text-primary">房型</h3>
-                <div class="col-9">
-                    <div class="dropdown w-100">
-                        <button
-                            class="w-100 btn btn-outline-light justify-content-between dropdown-toggle dropdown-toggle-split"
-                            data-bs-toggle="dropdown" type="button">
-                            <span class="material-symbols-outlined text-primary">home</span>
-                            <sapn class="me-auto">請選擇房型</sapn>
-                        </button>
-                        <ul class="dropdown-menu overflow-y-auto w-100">
-                            <li><a href="#" class="dropdown-item ps-9">透天</a></li>
-                            <li><a href="#" class="dropdown-item ps-9">公寓</a></li>
-                            <li><a href="#" class="dropdown-item ps-9">豪宅</a></li>
-                            <li><a href="#" class="dropdown-item ps-9">別墅</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </li>
-        <li class="col">
-            <div class="row row-cols-2 row-cols-lg-1 g-2">
-                <h3 class="col-3 fs-md text-primary">房間數</h3>
-                <div class="col-9">
-                    <div class="dropdown w-100">
-                        <button
-                            class="w-100 btn btn-outline-light justify-content-between dropdown-toggle dropdown-toggle-split"
-                            data-bs-toggle="dropdown" type="button">
-                            <span class="material-symbols-outlined text-primary">king_bed</span>
-                            <sapn class="me-auto">請選擇房間數</sapn>
-                        </button>
-                        <ul class="dropdown-menu overflow-y-auto w-100">
-                            <li><a href="#" class="dropdown-item ps-9">1間</a></li>
-                            <li><a href="#" class="dropdown-item ps-9">2間</a></li>
-                            <li><a href="#" class="dropdown-item ps-9">3間</a></li>
-                            <li><a href="#" class="dropdown-item ps-9">4間</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </li>
-        <li class="col">
-            <div class="row row-cols-2 row-cols-lg-1 g-2">
-                <h3 class="col-3 fs-md text-primary">價格</h3>
-                <div class="col-9">
-                    <div class="dropdown w-100">
-                        <button
-                            class="w-100 btn btn-outline-light justify-content-between dropdown-toggle dropdown-toggle-split"
-                            data-bs-toggle="dropdown" type="button">
-                            <span class="material-symbols-outlined text-primary">Attach_money</span>
-                            <sapn class="me-auto">請選擇價格區間</sapn>
-                        </button>
-                        <ul class="dropdown-menu overflow-y-auto w-100">
-                            <li><a href="#" class="dropdown-item ps-9">500 萬以下</a></li>
-                            <li><a href="#" class="dropdown-item ps-9">500 ~ 1,000 萬</a></li>
-                            <li><a href="#" class="dropdown-item ps-9">1,000 ~ 2,000 萬</a></li>
-                            <li><a href="#" class="dropdown-item ps-9">2,000萬以上</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </li>
-        <li class="col">
-            <a href="search.html" class="btn btn-primary justify-content-center py-3 w-100">
-                搜尋房源
-                <span class="material-symbols-outlined"> search </span>
-            </a>
-        </li>
-    </ul>
-</div>    </header>
-    
-    <section class="container bg-img-display1 py-md-17 py-10 px-5">
-      <div class="row row-cols-1 row-cols-lg-2 gy-9 g-lg-4 mb-12 mb-lg-14">
-        <div class="col d-grid gap-3 gap-lg-4">
-          <h2 class="text-primary-dark">精選房源</h2>
-          <h3 class="h6">為您精心挑選的優質物件</h3>
-        </div>
-        <div class="col">
-          <ul class="nav gap-4 flex-nowrap text-nowrap overflow-x-auto me-n5">
-            <li class="navbar-item">
-              <a href="#" class="btn btn-outline-primary rounded-pill px-9 active">全部</a>
-            </li>
-            <li class="navbar-item">
-              <a href="#" class="btn btn-outline-primary rounded-pill px-9">透天</a>
-            </li>
-            <li class="navbar-item">
-              <a href="#" class="btn btn-outline-primary rounded-pill px-9">公寓</a>
-            </li>
-            <li class="navbar-item">
-              <a href="#" class="btn btn-outline-primary rounded-pill px-9">豪宅</a>
-            </li>
-            <li class="navbar-item">
-              <a href="#" class="btn btn-outline-primary rounded-pill px-9">別墅</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- 卡片們 -->
-      <ul class="list-unstyled row row-cols-1 row-cols-lg-3 g-lg-4 gy-9 mb-12 mb-lg-14">
-        <li class="col">
-          <div class="card border-0">
+</nav>    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <ul class="swiper-wrapper list-unstyled">
+        <!-- Slides 輪播卡片們-->
+        <li class="swiper-slide d-flex h-auto">
+          <div class="card border-0 h-100">
             <div class="rounded-6 position-relative">
-              <img class="rounded-6 w-100" src="/Hex2026-homeFinder/assets/search-house1-BLw1m9FQ.png" alt="示意圖：景觀別墅"
-                class="card-img-top">
+              <img class="rounded-6 w-100" src="/Hex2026-homeFinder/assets/search-house1-BLw1m9FQ.png" alt="示意圖：景觀別墅" class="card-img-top">
               <h6
                 class="badge fs-md rounded-pill bg-white text-primary-dark position-absolute bottom-0 end-0 m-3 py-1 px-5">
                 別墅</h6>
             </div>
             <div class="card-body d-grid gap-6 py-2">
-              <h3 class="d-flex justify-content-between text-black">
+              <h3 class="h5 d-flex justify-content-between text-black">
                 景觀別墅
-                <span class="fs-sm text-light"><span
+                <span class="fs-sm text-light py-2"><span
                     class="fs-md material-symbols-outlined">location_on</span>台北市信義區</span>
               </h3>
-              <h4 class="h5 text-primary">NT$<span class="h3 text-primary-dark">950</span>萬</h4>
-              <div class="d-flex gap-2">
+              <h4 class="h5 text-primary mt-auto d-inline-flex gap-3 align-items-end">NT$<span class="h3 text-primary-dark">1,500</span>萬</h4>
+              <div class="d-flex gap-2 mt-auto">
                 <a href="#" class="rounded-pill btn btn-outline-primary px-5 py-2"><span
                     class="material-symbols-outlined">bed</span><strong class="text-primary-dark">3</strong></a>
                 <a href="#" class="rounded-pill btn btn-outline-primary px-5 py-2"><span
@@ -222,8 +85,36 @@
             </div>
           </div>
         </li>
-        <li class="col">
-          <div class="card border-0">
+        <li class="swiper-slide d-flex h-auto">
+          <div class="card border-0 h-100">
+            <div class="rounded-6 position-relative">
+              <img class="rounded-6 w-100" src="/Hex2026-homeFinder/assets/index-img_house2-DES3EpDr.png" alt="示意圖：景觀別墅"
+                class="card-img-top">
+              <h6
+                class="badge fs-md rounded-pill bg-white text-primary-dark position-absolute bottom-0 end-0 m-3 py-1 px-5">
+                豪宅</h6>
+            </div>
+            <div class="card-body d-grid gap-6 py-2">
+              <h3 class="h5 d-flex justify-content-between text-black">
+                現代豪華大樓
+                <span class="fs-sm text-light py-2"><span
+                    class="fs-md material-symbols-outlined">location_on</span>台北市信義區</span>
+              </h3>
+              <h4 class="h5 text-primary mt-auto d-inline-flex gap-3 align-items-end">NT$<span class="h3 text-primary-dark">1,200</span>萬</h4>
+              <div class="d-flex gap-2 mt-auto">
+                <a href="#" class="rounded-pill btn btn-outline-primary px-5 py-2"><span
+                    class="material-symbols-outlined">bed</span><strong class="text-primary-dark">3</strong></a>
+                <a href="#" class="rounded-pill btn btn-outline-primary px-5 py-2"><span
+                    class="material-symbols-outlined">shower</span><strong class="text-primary-dark">2</strong></a>
+                <a href="#" class="rounded-pill btn btn-outline-primary px-5 py-2"><span
+                    class="material-symbols-outlined">crop_square</span><strong
+                    class="text-primary-dark">120坪</strong></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide d-flex h-auto">
+          <div class="card border-0 h-100">
             <div class="rounded-6 position-relative">
               <img class="rounded-6 w-100" src="/Hex2026-homeFinder/assets/search-house2-COa3W3mY.png" alt="示意圖：現代豪華大樓"
                 class="card-img-top">
@@ -231,14 +122,14 @@
                 class="badge fs-md rounded-pill bg-white text-primary-dark position-absolute bottom-0 end-0 m-3 py-1 px-5">
                 透天</h6>
             </div>
-            <div class="card-body row gap-6 py-2">
-              <h3 class="d-flex justify-content-between text-black">
+            <div class="card-body d-grid gap-6 py-2">
+              <h3 class="h5 d-flex justify-content-between text-black">
                 溫馨透天
-                <span class="fs-sm text-light"><span
+                <span class="fs-sm text-light py-2"><span
                     class="fs-md material-symbols-outlined">location_on</span>台北市信義區</span>
               </h3>
-              <h4 class="h5 text-primary">NT$<span class="h3 text-primary-dark">1,700</span>萬</h4>
-              <div class="d-flex gap-2">
+              <h4 class="h5 text-primary mt-auto d-inline-flex gap-3 align-items-end">NT$<span class="h3 text-primary-dark">1,700</span>萬</h4>
+              <div class="d-flex gap-2 mt-auto">
                 <a href="#" class="rounded-pill btn btn-outline-primary px-5 py-2"><span
                     class="material-symbols-outlined">bed</span><strong class="text-primary-dark">3</strong></a>
                 <a href="#" class="rounded-pill btn btn-outline-primary px-5 py-2"><span
@@ -250,120 +141,8 @@
             </div>
           </div>
         </li>
-        <li class="col">
-          <div class="card border-0">
-            <div class="rounded-6 position-relative">
-              <img class="rounded-6 w-100" src="/Hex2026-homeFinder/assets/search-house3-Cm4HGmVu.png" alt="示意圖：溫馨透天"
-                class="card-img-top">
-              <h6
-                class="badge fs-md rounded-pill bg-white text-primary-dark position-absolute bottom-0 end-0 m-3 py-1 px-5">
-                豪宅</h6>
-            </div>
-            <div class="card-body d-grid gap-6 py-2">
-              <h3 class="d-flex justify-content-between text-black">
-                天境御邸
-                <span class="fs-sm text-light"><span
-                    class="fs-md material-symbols-outlined">location_on</span>台北市信義區</span>
-              </h3>
-              <h4 class="h5 text-primary">NT$<span class="h3 text-primary-dark">1,500</span>萬</h4>
-              <div class="d-flex gap-2">
-                <a href="#" class="rounded-pill btn btn-outline-primary px-5 py-2"><span
-                    class="material-symbols-outlined">bed</span><strong class="text-primary-dark">3</strong></a>
-                <a href="#" class="rounded-pill btn btn-outline-primary px-5 py-2"><span
-                    class="material-symbols-outlined">shower</span><strong class="text-primary-dark">2</strong></a>
-                <a href="#" class="rounded-pill btn btn-outline-primary px-5 py-2"><span
-                    class="material-symbols-outlined">crop_square</span><strong
-                    class="text-primary-dark">80坪</strong></a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="col">
-          <div class="card border-0">
-            <div class="rounded-6 position-relative">
-              <img class="rounded-6 w-100" src="/Hex2026-homeFinder/assets/search-house4-B0GTZ_f1.png" alt="示意圖：景觀別墅"
-                class="card-img-top">
-              <h6
-                class="badge fs-md rounded-pill bg-white text-primary-dark position-absolute bottom-0 end-0 m-3 py-1 px-5">
-                豪宅</h6>
-            </div>
-            <div class="card-body d-grid gap-6 py-2">
-              <h3 class="d-flex justify-content-between text-black">
-                御山景苑
-                <span class="fs-sm text-light"><span
-                    class="fs-md material-symbols-outlined">location_on</span>台北市信義區</span>
-              </h3>
-              <h4 class="h5 text-primary">NT$<span class="h3 text-primary-dark">1,200</span>萬</h4>
-              <div class="d-flex gap-2">
-                <a href="#" class="rounded-pill btn btn-outline-primary px-5 py-2"><span
-                    class="material-symbols-outlined">bed</span><strong class="text-primary-dark">3</strong></a>
-                <a href="#" class="rounded-pill btn btn-outline-primary px-5 py-2"><span
-                    class="material-symbols-outlined">shower</span><strong class="text-primary-dark">2</strong></a>
-                <a href="#" class="rounded-pill btn btn-outline-primary px-5 py-2"><span
-                    class="material-symbols-outlined">crop_square</span><strong
-                    class="text-primary-dark">85坪</strong></a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="col">
-          <div class="card border-0">
-            <div class="rounded-6 position-relative">
-              <img class="rounded-6 w-100" src="/Hex2026-homeFinder/assets/search-house5-Bz-lN41S.png" alt="示意圖：現代豪華大樓"
-                class="card-img-top">
-              <h6
-                class="badge fs-md rounded-pill bg-white text-primary-dark position-absolute bottom-0 end-0 m-3 py-1 px-5">
-                別墅</h6>
-            </div>
-            <div class="card-body row gap-6 py-2">
-              <h3 class="d-flex justify-content-between text-black">
-                景觀別墅
-                <span class="fs-sm text-light"><span
-                    class="fs-md material-symbols-outlined">location_on</span>台北市信義區</span>
-              </h3>
-              <h4 class="h5 text-primary">NT$<span class="h3 text-primary-dark">1,150</span>萬</h4>
-              <div class="d-flex gap-2">
-                <a href="#" class="rounded-pill btn btn-outline-primary px-5 py-2"><span
-                    class="material-symbols-outlined">bed</span><strong class="text-primary-dark">3</strong></a>
-                <a href="#" class="rounded-pill btn btn-outline-primary px-5 py-2"><span
-                    class="material-symbols-outlined">shower</span><strong class="text-primary-dark">2</strong></a>
-                <a href="#" class="rounded-pill btn btn-outline-primary px-5 py-2"><span
-                    class="material-symbols-outlined">crop_square</span><strong
-                    class="text-primary-dark">70坪</strong></a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="col">
-          <div class="card border-0">
-            <div class="rounded-6 position-relative">
-              <img class="rounded-6 w-100" src="/Hex2026-homeFinder/assets/search-house6-qZyizQ9l.png" alt="示意圖：溫馨透天"
-                class="card-img-top">
-              <h6
-                class="badge fs-md rounded-pill bg-white text-primary-dark position-absolute bottom-0 end-0 m-3 py-1 px-5">
-                豪宅</h6>
-            </div>
-            <div class="card-body d-grid gap-6 py-2">
-              <h3 class="d-flex justify-content-between text-black">
-                山嵐御墅
-                <span class="fs-sm text-light"><span
-                    class="fs-md material-symbols-outlined">location_on</span>台北市信義區</span>
-              </h3>
-              <h4 class="h5 text-primary">NT$<span class="h3 text-primary-dark">1,000</span>萬</h4>
-              <div class="d-flex gap-2">
-                <a href="#" class="rounded-pill btn btn-outline-primary px-5 py-2"><span
-                    class="material-symbols-outlined">bed</span><strong class="text-primary-dark">3</strong></a>
-                <a href="#" class="rounded-pill btn btn-outline-primary px-5 py-2"><span
-                    class="material-symbols-outlined">shower</span><strong class="text-primary-dark">2</strong></a>
-                <a href="#" class="rounded-pill btn btn-outline-primary px-5 py-2"><span
-                    class="material-symbols-outlined">crop_square</span><strong
-                    class="text-primary-dark">90坪</strong></a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="col">
-          <div class="card border-0">
+        <li class="swiper-slide d-flex h-auto">
+          <div class="card border-0 h-100">
             <div class="rounded-6 position-relative">
               <img class="rounded-6 w-100" src="/Hex2026-homeFinder/assets/search-house7-DjKDDwuB.png" alt="示意圖：景觀別墅"
                 class="card-img-top">
@@ -372,13 +151,13 @@
                 透天</h6>
             </div>
             <div class="card-body d-grid gap-6 py-2">
-              <h3 class="d-flex justify-content-between text-black">
+              <h3 class="h5 d-flex justify-content-between text-black">
                 巷光宅
-                <span class="fs-sm text-light"><span
+                <span class="fs-sm text-light py-2"><span
                     class="fs-md material-symbols-outlined">location_on</span>台北市信義區</span>
               </h3>
-              <h4 class="h5 text-primary">NT$<span class="h3 text-primary-dark">2,000</span>萬</h4>
-              <div class="d-flex gap-2">
+              <h4 class="h5 text-primary mt-auto d-inline-flex gap-3 align-items-end">NT$<span class="h3 text-primary-dark">2,000</span>萬</h4>
+              <div class="d-flex gap-2 mt-auto">
                 <a href="#" class="rounded-pill btn btn-outline-primary px-5 py-2"><span
                     class="material-symbols-outlined">bed</span><strong class="text-primary-dark">3</strong></a>
                 <a href="#" class="rounded-pill btn btn-outline-primary px-5 py-2"><span
@@ -390,8 +169,8 @@
             </div>
           </div>
         </li>
-        <li class="col">
-          <div class="card border-0">
+        <li class="swiper-slide d-flex h-auto">
+          <div class="card border-0 h-100">
             <div class="rounded-6 position-relative">
               <img class="rounded-6 w-100" src="/Hex2026-homeFinder/assets/search-house8-CZzo7Krs.png" alt="示意圖：現代豪華大樓"
                 class="card-img-top">
@@ -399,14 +178,14 @@
                 class="badge fs-md rounded-pill bg-white text-primary-dark position-absolute bottom-0 end-0 m-3 py-1 px-5">
                 豪宅</h6>
             </div>
-            <div class="card-body row gap-6 py-2">
-              <h3 class="d-flex justify-content-between text-black">
+            <div class="card-body d-grid gap-6 py-2">
+              <h3 class="h5 d-flex justify-content-between text-black">
                 觀山大境
-                <span class="fs-sm text-light"><span
+                <span class="fs-sm text-light py-2"><span
                     class="fs-md material-symbols-outlined">location_on</span>台北市信義區</span>
               </h3>
-              <h4 class="h5 text-primary">NT$<span class="h3 text-primary-dark">2,500</span>萬</h4>
-              <div class="d-flex gap-2">
+              <h4 class="h5 text-primary mt-auto d-inline-flex gap-3 align-items-end">NT$<span class="h3 text-primary-dark">2,500</span>萬</h4>
+              <div class="d-flex gap-2 mt-auto">
                 <a href="#" class="rounded-pill btn btn-outline-primary px-5 py-2"><span
                     class="material-symbols-outlined">bed</span><strong class="text-primary-dark">3</strong></a>
                 <a href="#" class="rounded-pill btn btn-outline-primary px-5 py-2"><span
@@ -418,8 +197,8 @@
             </div>
           </div>
         </li>
-        <li class="col">
-          <div class="card border-0">
+        <li class="swiper-slide d-flex h-auto">
+          <div class="card border-0 h-100">
             <div class="rounded-6 position-relative">
               <img class="rounded-6 w-100" src="/Hex2026-homeFinder/assets/search-house9-CiqMWYyL.png" alt="示意圖：溫馨透天"
                 class="card-img-top">
@@ -428,13 +207,13 @@
                 公寓</h6>
             </div>
             <div class="card-body d-grid gap-6 py-2">
-              <h3 class="d-flex justify-content-between text-black">
+              <h3 class="h5 d-flex justify-content-between text-black">
                 現代豪華公寓
-                <span class="fs-sm text-light"><span
+                <span class="fs-sm text-light py-2"><span
                     class="fs-md material-symbols-outlined">location_on</span>台北市信義區</span>
               </h3>
-              <h4 class="h5 text-primary">NT$<span class="h3 text-primary-dark">1,500</span>萬</h4>
-              <div class="d-flex gap-2">
+              <h4 class="h5 text-primary mt-auto d-inline-flex gap-3 align-items-end">NT$<span class="h3 text-primary-dark">1,500</span>萬</h4>
+              <div class="d-flex gap-2 mt-auto">
                 <a href="#" class="rounded-pill btn btn-outline-primary px-5 py-2"><span
                     class="material-symbols-outlined">bed</span><strong class="text-primary-dark">3</strong></a>
                 <a href="#" class="rounded-pill btn btn-outline-primary px-5 py-2"><span
@@ -447,26 +226,33 @@
           </div>
         </li>
       </ul>
-      <!-- ＥＮＤ 卡片們 -->
-      <nav class="pag navigation">
-        <ul class="pagination justify-content-center fw-bold lh-1">
-          <li class="page-item"><a href="#" class="page-link">
-            <i class="bi bi-chevron-left"></i>
-          </a></li>
-          <li class="page-item"><a href="#" class="page-link active">  1</a></li>
-          <li class="page-item"><a href="#" class="page-link">  2</a></li>
-          <li class="page-item"><a href="#" class="page-link">  3</a></li>
-          <li class="page-item"><a href="#" class="page-link">...</a></li>
-          <li class="page-item"><a href="#" class="page-link"> 10</a></li>
-          <li class="page-item"><a href="#" class="page-link">
-            <i class="bi bi-chevron-right"></i>
-          </a></li>
-        </ul>
-      </nav>
-    </section>
-  </main>
+      <!-- 滾動條＆按鈕 -->
+      <div class="container">
+        <div class="row">
+          <div class="col-7">
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar position-relative"></div>
+          </div>
+          <!-- 翻頁按鈕 -->
+          <ul class="col-5 list-unstyled row g-2">
+            <li class="col">
+              <button class="swiper-btn-prev btn btn-primary w-100 p-3" type="button">
+                <span class="material-symbols-outlined">arrow_back</span>
+              </button>
+            </li>
+            <li class="col">
+              <button class="swiper-btn-next btn btn-primary w-100 p-3" type="button">
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-  <footer class="bg-footer text-white px-4 px-md-14 pt-17 pt-md-16 pb-10">
+    </div>
+
+
+    <footer class="bg-footer text-white px-4 px-md-14 pt-17 pt-md-16 pb-10">
         <div class="container-fluid px-2">
             <div class="row">
                 <div class="col-12 col-md-6 p-0"><img class="mw-100" src="data:image/svg+xml,%3csvg%20width='416'%20height='100'%20viewBox='0%200%20416%20100'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M53.4244%206.02909C54.6169%205.14135%2056.2506%205.14134%2057.4431%206.02909L97.7622%2028.9025C100.361%2030.8372%2098.9927%2034.9666%2095.7528%2034.9666H15.1146C11.8748%2034.9666%2010.5065%2030.8372%2013.1053%2028.9025L53.4244%206.02909Z'%20fill='white'/%3e%3cpath%20d='M12.811%2047.9686C12.811%2045.4907%2014.8197%2043.482%2017.2976%2043.482H62.6215C65.0993%2043.482%2067.1081%2045.4907%2067.1081%2047.9686V89.7215C67.1081%2092.1994%2065.0993%2094.2081%2062.6215%2094.2081H17.2976C14.8197%2094.2081%2012.811%2092.1994%2012.811%2089.7215V47.9686Z'%20fill='white'/%3e%3cpath%20d='M75.624%2047.968C75.624%2045.4902%2077.6327%2043.4814%2080.1106%2043.4814H93.5704C96.0483%2043.4814%2098.057%2045.4902%2098.057%2047.968V89.7209C98.057%2092.1988%2096.0483%2094.2075%2093.5704%2094.2075H80.1106C77.6327%2094.2075%2075.624%2092.1988%2075.624%2089.7209V47.968Z'%20fill='%23FF9E51'/%3e%3cpath%20d='M133.91%2092.845V42.8517H145.48V92.845H133.91Z'%20fill='white'/%3e%3cpath%20d='M176.628%2093.702C172.628%2093.702%20168.795%2093.1782%20165.129%2092.1308C161.463%2091.0357%20158.511%2089.6311%20156.273%2087.917L160.201%2079.2039C162.344%2080.7275%20164.867%2081.9893%20167.772%2082.9891C170.724%2083.9414%20173.699%2084.4175%20176.699%2084.4175C178.984%2084.4175%20180.818%2084.2033%20182.198%2083.7747C183.627%2083.2986%20184.674%2082.6558%20185.341%2081.8464C186.007%2081.037%20186.341%2080.1086%20186.341%2079.0611C186.341%2077.7279%20185.817%2076.6805%20184.769%2075.9186C183.722%2075.1092%20182.341%2074.4665%20180.627%2073.9903C178.913%2073.4666%20177.009%2072.9905%20174.914%2072.562C172.866%2072.0858%20170.795%2071.5145%20168.7%2070.8479C166.653%2070.1813%20164.772%2069.3243%20163.058%2068.2768C161.344%2067.2293%20159.939%2065.8486%20158.844%2064.1345C157.797%2062.4205%20157.273%2060.2303%20157.273%2057.564C157.273%2054.7072%20158.035%2052.1123%20159.559%2049.7793C161.13%2047.3987%20163.463%2045.518%20166.558%2044.1372C169.7%2042.7088%20173.628%2041.9946%20178.342%2041.9946C181.484%2041.9946%20184.579%2042.3755%20187.626%2043.1373C190.673%2043.8515%20193.363%2044.9466%20195.697%2046.4226L192.126%2055.2071C189.793%2053.874%20187.46%2052.8979%20185.127%2052.279C182.793%2051.6124%20180.508%2051.2791%20178.27%2051.2791C176.032%2051.2791%20174.199%2051.541%20172.771%2052.0647C171.343%2052.5884%20170.319%2053.2788%20169.7%2054.1359C169.081%2054.9453%20168.772%2055.8975%20168.772%2056.9926C168.772%2058.2782%20169.295%2059.3256%20170.343%2060.135C171.39%2060.8969%20172.771%2061.5158%20174.485%2061.9919C176.199%2062.4681%20178.08%2062.9442%20180.127%2063.4203C182.222%2063.8965%20184.293%2064.444%20186.341%2065.063C188.436%2065.6819%20190.34%2066.5152%20192.054%2067.5626C193.768%2068.6101%20195.149%2069.9909%20196.196%2071.7049C197.292%2073.419%20197.839%2075.5854%20197.839%2078.2041C197.839%2081.0132%20197.053%2083.5843%20195.482%2085.9173C193.911%2088.2503%20191.554%2090.131%20188.412%2091.5594C185.317%2092.9878%20181.389%2093.702%20176.628%2093.702Z'%20fill='white'/%3e%3cpath%20d='M242.883%2042.8517H254.453V92.845H242.883V42.8517ZM220.171%2092.845H208.602V42.8517H220.171V92.845ZM243.74%2072.3477H219.314V62.5633H243.74V72.3477Z'%20fill='white'/%3e%3cpath%20d='M269.138%2092.845V42.8517H280.707V92.845H269.138Z'%20fill='white'/%3e%3cpath%20d='M295.429%2092.845V42.8517H304.999L326.282%2078.1326H321.211L342.137%2042.8517H351.635L351.778%2092.845H340.923L340.851%2059.4923H342.851L326.139%2087.5599H320.925L303.856%2059.4923H306.284V92.845H295.429Z'%20fill='white'/%3e%3cpath%20d='M359.926%2092.845L382.208%2042.8517H393.635L415.99%2092.845H403.848L385.565%2048.708H390.136L371.781%2092.845H359.926ZM371.067%2082.1321L374.138%2073.3476H399.849L402.991%2082.1321H371.067Z'%20fill='white'/%3e%3c/svg%3e" alt="logo"></div>
@@ -495,6 +281,40 @@
             </div>
         </div>
 </footer>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+      <script>
+        const swiper = new Swiper('.swiper', {
+
+          // 分頁、左右箭頭、滾動條若有使用則必需設定
+          // 左右箭頭    
+          navigation: {
+            nextEl: '.swiper-btn-next',
+            prevEl: '.swiper-btn-prev',
+          },
+          // 滾動條
+          scrollbar: {
+            el: '.swiper-scrollbar',
+          },
+          // 手掌
+          grabCursor:true,
+          // 循環
+          loop:true,
+          // 間距
+          spaceBetween:"24",
+          //斷點排版
+          breakpoints: {
+            769: {
+            //   slidesPerView: 1.5,
+            //   slidesPerGroup: 2,
+            // },
+            // 992: {
+              slidesPerView: 2.5,
+              slidesPerGroup: 2,
+            },
+          },
+        });
+
+      </script>
 </body>
 
 </html>
