@@ -1,0 +1,10 @@
+.swiper-scrollbar {
+    background: var(--bs-gray-200, #EAEAEA);
+    &.swiper-scrollbar-horizontal, .swiper-horizontal>& {
+        --swiper-scrollbar-top:50%;
+        width: 100%;
+    }
+}
+.swiper-scrollbar-drag {
+    background: var(--bs-secondary, #FF9E51);
+}
